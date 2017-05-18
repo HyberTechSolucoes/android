@@ -1,8 +1,9 @@
 package com.example.kennedy.miloo;
-
+import com.example.kennedy.miloo.EsqueciActivity;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -350,6 +351,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         protected void onCancelled() {
             mAuthTask = null;
             showProgress(false);
+
+        }
+        public void activityEsquici(View view){
+            Intent intent = new Intent(LoginActivity.this, EsqueciActivity.class);
+            startActivity(intent);
         }
     }
 }

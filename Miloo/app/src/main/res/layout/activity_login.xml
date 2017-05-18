@@ -33,12 +33,12 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageLogoMiloo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/miloo_logo"
+                android:layout_marginBottom="30dp"
                 android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"/>
+                app:srcCompat="@drawable/miloo_logo" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -48,11 +48,11 @@
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
                     android:backgroundTint="@color/colorInputlogin"
                     android:textColor="@color/colorInputlogin"
                     android:textColorHint="@color/colorInputlogin" />
@@ -63,19 +63,53 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonGoogle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginStart="29dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_horizontal"
+                        app:srcCompat="@drawable/google_login" />
+
+
+                    <ImageButton
+                        android:id="@+id/imageButtonFacebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="47dp"
+                        android:layout_marginRight="47dp"
+                        android:layout_toRightOf="@+id/imageButtonGoogle"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="47dp"
+                        app:srcCompat="@drawable/facebook_login" />
+
+                </RelativeLayout>
+
                 <EditText
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
                     android:hint="@string/prompt_password"
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:maxLines="1"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
                     android:backgroundTint="@color/colorInputlogin"
                     android:textColor="@color/colorInputlogin"
                     android:textColorHint="@color/colorInputlogin" />
@@ -87,12 +121,31 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/action_sign_in"
-                android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
                 android:background="@color/colorAccent"
+                android:text="@string/action_sign_in"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Cadastrar"
+                android:stateListAnimator="@null"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/esqueci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/Esqueceu"
+                android:stateListAnimator="@null"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorInputlogin" />
 
         </LinearLayout>
     </ScrollView>

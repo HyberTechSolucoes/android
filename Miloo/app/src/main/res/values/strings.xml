@@ -11,6 +11,9 @@
     <string name="error_incorrect_password">Ops...</string>
     <string name="error_field_required">Ops...</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+        completions."</string>
+    <string name="Esqueceu">Esqueci minha senha</string>
+    <string name="Cadastrar">CADASTRE-SE</string>
+    <string name="Enviar">ENVIAR</string>
+
 </resources>
