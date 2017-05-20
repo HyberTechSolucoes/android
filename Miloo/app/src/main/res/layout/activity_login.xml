@@ -129,10 +129,10 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/cadastrar"
+                android:id="@+id/cadastre_se"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Cadastrar"
+                android:text="@string/Cadastre_se"
                 android:stateListAnimator="@null"
                 android:background="@color/colorPrimary"
                 android:textColor="@color/colorWhite" />

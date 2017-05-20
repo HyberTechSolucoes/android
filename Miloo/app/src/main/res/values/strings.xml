@@ -13,7 +13,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."</string>
     <string name="Esqueceu">Esqueci minha senha</string>
-    <string name="Cadastrar">CADASTRE-SE</string>
+    <string name="Cadastre_se">CADASTRE-SE</string>
     <string name="Enviar">ENVIAR</string>
+    <string name="Cadastrar">CADASTRAR</string>
+    <string name="NomeCompleto">Nome completo</string>
 
 </resources>
