@@ -8,6 +8,8 @@ public class EsqueciActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Esconde a barra de titulos
+        getSupportActionBar().sha
         setContentView(R.layout.activity_esqueci);
     }
 }
