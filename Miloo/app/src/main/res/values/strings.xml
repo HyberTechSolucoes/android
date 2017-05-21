@@ -17,5 +17,6 @@
     <string name="Enviar">ENVIAR</string>
     <string name="Cadastrar">CADASTRAR</string>
     <string name="NomeCompleto">Nome completo</string>
+    <string name="DataNasc">Data de nascimento</string>
 
 </resources>

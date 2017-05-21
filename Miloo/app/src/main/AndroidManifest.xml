@@ -24,7 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".EsqueciActivity" />
-        <activity android:name=".NovaContaActivity"></activity>
+        <activity android:name=".NovaContaActivity" />
+        <activity android:name=".ConfiguracoesActivity"></activity>
     </application>
 
 </manifest>
