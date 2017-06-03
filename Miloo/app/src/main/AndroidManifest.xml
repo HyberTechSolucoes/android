@@ -25,7 +25,11 @@
         </activity>
         <activity android:name=".EsqueciActivity" />
         <activity android:name=".NovaContaActivity" />
-        <activity android:name=".ConfiguracoesActivity"></activity>
+        <activity android:name=".ConfiguracoesActivity" />
+        <activity android:name=".MeusDadosActivity" />
+        <activity android:name=".EditarContatoActivity" />
+        <activity android:name=".EditarEnderecoActivity" />
+        <activity android:name=".EditarServicosActivity"></activity>
     </application>
 
 </manifest>

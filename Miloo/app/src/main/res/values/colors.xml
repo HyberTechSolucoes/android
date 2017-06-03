@@ -5,4 +5,6 @@
     <color name="colorAccent">#ffdd5d</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorInputlogin">#ffa1a0</color>
+    <color name="colorGray">#d3d3d3</color>
+
 </resources>
