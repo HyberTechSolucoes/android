@@ -29,7 +29,10 @@
         <activity android:name=".MeusDadosActivity" />
         <activity android:name=".EditarContatoActivity" />
         <activity android:name=".EditarEnderecoActivity" />
-        <activity android:name=".EditarServicosActivity"></activity>
+        <activity android:name=".EditarServicosActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"></activity>
     </application>
 
 </manifest>
