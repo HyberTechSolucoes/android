@@ -23,4 +23,15 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
+
+    <string-array name="configuracoes_titulo">
+        <item>Editar dados</item>
+        <item>Meus endereços</item>
+        <item> </item>
+        <item>Fale conosco</item>
+        <item>Envivar convite</item>
+        <item>Termos de uso</item>
+        <item>Sair</item>
+    </string-array>
+
 </resources>

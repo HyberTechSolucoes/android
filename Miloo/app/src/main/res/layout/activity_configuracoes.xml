@@ -13,32 +13,21 @@
     tools:context="com.example.kennedy.miloo.ConfiguracoesActivity">
 
     <ScrollView
-        android:id="@+id/configuraca_form"
+        android:id="@+id/configuracoes_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/email_login_form"
+            android:id="@+id/email_activity_configuracoes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical">
 
-
-            <Button
-                android:id="@+id/editardados_configuracoes"
+            <ListView
+                android:id="@+id/list_view_activity_configuracoes"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@color/colorWhite"
-                android:text="Editar dados" />
-
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:background="@color/colorAccent"
-                android:focusable="false" />
+                android:layout_height="wrap_content"></ListView>
 
         </LinearLayout>
     </ScrollView>
