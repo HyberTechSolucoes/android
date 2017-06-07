@@ -12,98 +12,118 @@ android:paddingTop="@dimen/activity_vertical_margin"
 android:background="@color/colorWhite"
 tools:context="com.example.kennedy.miloo.EditarServicosActivity">
 
-<ScrollView
-    android:id="@+id/editar_servico_scrollview"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
-        android:id="@+id/editar_servico_linear"
+    <ScrollView
+        android:id="@+id/editar_servico_scrollview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <AutoCompleteTextView
-                android:id="@+id/titulo_editarservico"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/colorGray"
-                android:hint="Titulo do serviço"
-                android:inputType="text"
-                android:maxLines="1"
-                android:textColor="@color/colorGray"
-                android:textColorHint="@color/colorGray" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <AutoCompleteTextView
-                android:id="@+id/descricao_editarservico"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/colorGray"
-                android:hint="Descrição"
-                android:inputType="text"
-                android:maxLines="1"
-                android:textColor="@color/colorGray"
-                android:textColorHint="@color/colorGray" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <AutoCompleteTextView
-                android:id="@+id/valor_editarservico"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/colorGray"
-                android:hint="Valor"
-                android:inputType="numberDecimal"
-                android:maxLines="1"
-                android:textColor="@color/colorGray"
-                android:textColorHint="@color/colorGray" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <Switch
-            android:id="@+id/preco_serico_editarservico"
+        <LinearLayout
+            android:id="@+id/editar_servico_linear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/colorGray"
-            android:text="Preço do serviço a combinar" />
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/salvar_editarservico"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:background="@color/colorPrimaryDark"
-            android:text="SALVAR DADOS"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold" />
 
-    </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-</ScrollView>
+                <AutoCompleteTextView
+                    android:id="@+id/titulo_editarservico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorGray"
+                    android:hint="Titulo do serviço"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/descricao_editarservico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorGray"
+                    android:hint="Descrição"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/valor_editarservico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorGray"
+                    android:hint="Valor"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/preco_serico_editarservico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textView_editarservico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/preco_serico_editarservico"
+                    android:layout_alignBottom="@+id/preco_serico_editarservico"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/preco_serico_editarservico"
+                    android:layout_toRightOf="@+id/preco_serico_editarservico"
+                    android:textColor="@color/colorGrayBlack"
+                    android:text="Preço do Serviço a combinar" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/salvar_editarservico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="SALVAR DADOS"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
