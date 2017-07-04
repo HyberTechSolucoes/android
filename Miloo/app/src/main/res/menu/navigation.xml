@@ -9,12 +9,12 @@
         android:title="Pesquisar"/>
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_bag"
         android:icon="@drawable/bag_icon2x"
         android:title="Bag" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_notificacoes"
         android:icon="@drawable/bell_icon2x"
         android:title="Notificações" />
 
