@@ -6,10 +6,14 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import com.example.kennedy.miloo.domain.Bag;
 import com.example.kennedy.miloo.libs.BagMainFragment;
 import com.example.kennedy.miloo.libs.NotificacoesMainFragment;
 import com.example.kennedy.miloo.libs.PessoaMainFragment;
 import com.example.kennedy.miloo.libs.ProcuraMainFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +54,19 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    }
+
+
+    public List<Bag> getSetProfList(int qtd){
+        String[] nomeBag = new String[]{"Daenerys Informárica", "Daenerys Cabelereira", "Daenerys Manutenção"};
+        int[] backGround = new int[]{R.drawable.informatica_cover, R.drawable.cabelereiro_cover, R.drawable.informatica_cover};
+        List<Bag> listAux = new ArrayList<>();
+
+        for(int i = 0; i < qtd; i++){
+            Bag c = new Bag( nomeBag[i % nomeBag.length], backGround[i % backGround.length] );
+            listAux.add(c);
+        }
+        return(listAux);
     }
 
 }

@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import com.example.kennedy.miloo.MainActivity;
 import com.example.kennedy.miloo.libs.BagMainFragment;
 import com.example.kennedy.miloo.R;
 import com.example.kennedy.miloo.adapters.BagAdapter;
@@ -62,7 +63,7 @@ public class BagFragment extends Fragment implements RecyclerViewOnClickListener
 
                 if (mList.size() == llm.findLastCompletelyVisibleItemPosition() + 1) {
                     //if (mList.size() == max + 1) {
-                    List<Bag> listAux = ((BagMainFragment) getActivity()).getSetProfList(3);
+                    List<Bag> listAux = ((MainActivity) getActivity()).getSetProfList(3);
 
                     for (int i = 0; i < listAux.size(); i++) {
                         adapter.addListItem(listAux.get(i), mList.size());
@@ -84,7 +85,7 @@ public class BagFragment extends Fragment implements RecyclerViewOnClickListener
         llm.setGapStrategy(StaggeredGridLayoutManager.GAP_HANDLING_MOVE_ITEMS_BETWEEN_SPANS);
         mRecyclerView.setLayoutManager(llm);*/
 
-        mList = ((BagMainFragment) getActivity()).getSetProfList(3);
+        mList = ((MainActivity) getActivity()).getSetProfList(3);
         BagAdapter adapter = new BagAdapter(getActivity(), mList);
         //adapter.setRecyclerViewOnClickListenerHack(this);
         mRecyclerView.setAdapter( adapter );
@@ -109,7 +110,7 @@ public class BagFragment extends Fragment implements RecyclerViewOnClickListener
     }
 
 
-    private static class RecyclerViewTouchListener implements RecyclerView.OnItemTouchListener {
+    public static class RecyclerViewTouchListener implements RecyclerView.OnItemTouchListener {
         private Context mContext;
         private GestureDetector mGestureDetector;
         private RecyclerViewOnClickListenerHack mRecyclerViewOnClickListenerHack;
