@@ -3,10 +3,12 @@ package com.example.kennedy.miloo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.example.kennedy.miloo.domain.Bag;
+import com.example.kennedy.miloo.fragments.BagFragment;
 import com.example.kennedy.miloo.libs.BagMainFragment;
 import com.example.kennedy.miloo.libs.NotificacoesMainFragment;
 import com.example.kennedy.miloo.libs.PessoaMainFragment;
@@ -26,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_bag:
+//                    BagFragment frag = (BagFragment) getSupportFragmentManager().findFragmentByTag("mainFrag");
+//                    if(frag == null) {
+//                        frag = new BagFragment();
+//                        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+//                        ft.replace(R.id.contentLayout, frag, "mainFrag");
+//                        ft.commit();
+//                    }
                     BagMainFragment bagMainFragment = new BagMainFragment();
                     getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, bagMainFragment, bagMainFragment.getTag()).commit();
                     return true;
