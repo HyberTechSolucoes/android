@@ -49,8 +49,8 @@ public class BagMainFragment  extends Fragment  {
 
 
         mList = ((MainActivity) getActivity()).getSetProfList(3);
-//        BagAdapter adapter = new BagAdapter(getActivity(), mList);
-//        mRecyclerView.setAdapter( adapter );
+        BagAdapter adapter = new BagAdapter(getActivity(), mList);
+        mRecyclerView.setAdapter( adapter );
 
 
         return view;

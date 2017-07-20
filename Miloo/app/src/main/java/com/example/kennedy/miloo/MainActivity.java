@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import com.example.kennedy.miloo.domain.Bag;
 import com.example.kennedy.miloo.fragments.BagFragment;
 import com.example.kennedy.miloo.libs.BagMainFragment;
+import com.example.kennedy.miloo.libs.BottomNavigationViewHelper;
 import com.example.kennedy.miloo.libs.NotificacoesMainFragment;
 import com.example.kennedy.miloo.libs.PessoaMainFragment;
 import com.example.kennedy.miloo.libs.ProcuraMainFragment;
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        BottomNavigationViewHelper.disableShiftMode(navigation);
     }
 
 
