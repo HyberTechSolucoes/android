@@ -7,9 +7,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import com.example.kennedy.miloo.domain.Bag;
-import com.example.kennedy.miloo.fragments.BagFragment;
-import com.example.kennedy.miloo.libs.BagMainFragment;
+import com.example.kennedy.miloo.domain.CardCategoria;
+import com.example.kennedy.miloo.fragments.CardCategoriaFragment;
 import com.example.kennedy.miloo.libs.BottomNavigationViewHelper;
 import com.example.kennedy.miloo.libs.NotificacoesMainFragment;
 import com.example.kennedy.miloo.libs.PessoaMainFragment;
@@ -28,24 +27,17 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
+                case R.id.navigation_pesquisa:
+                    ProcuraMainFragment procuraMainFragment = new ProcuraMainFragment();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, procuraMainFragment, procuraMainFragment.getTag()).commit();
+                    return true;
                 case R.id.navigation_bag:
-//                    BagFragment frag = (BagFragment) getSupportFragmentManager().findFragmentByTag("mainFrag");
-//                    if(frag == null) {
-//                        frag = new BagFragment();
-//                        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-//                        ft.replace(R.id.contentLayout, frag, "mainFrag");
-//                        ft.commit();
-//                    }
-                    BagMainFragment bagMainFragment = new BagMainFragment();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, bagMainFragment, bagMainFragment.getTag()).commit();
+                    NotificacoesMainFragment notificacoesMainFragment2 = new NotificacoesMainFragment();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, notificacoesMainFragment2, notificacoesMainFragment2.getTag()).commit();
                     return true;
                 case R.id.navigation_notificacoes:
                     NotificacoesMainFragment notificacoesMainFragment = new NotificacoesMainFragment();
                     getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, notificacoesMainFragment, notificacoesMainFragment.getTag()).commit();
-                    return true;
-                case R.id.navigation_pesquisa:
-                    ProcuraMainFragment procuraMainFragment = new ProcuraMainFragment();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, procuraMainFragment, procuraMainFragment.getTag()).commit();
                     return true;
                 case R.id.navigation_pessoa:
                     PessoaMainFragment pessoaMainFragment = new PessoaMainFragment();
@@ -65,16 +57,22 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         BottomNavigationViewHelper.disableShiftMode(navigation);
+
+        ProcuraMainFragment procuraMainFragment = new ProcuraMainFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, procuraMainFragment, procuraMainFragment.getTag()).commit();
+
+
     }
 
 
-    public List<Bag> getSetProfList(int qtd){
-        String[] nomeBag = new String[]{"Daenerys Informárica", "Daenerys Cabelereira", "Daenerys Manutenção"};
-        int[] backGround = new int[]{R.drawable.informatica_cover, R.drawable.cabelereiro_cover, R.drawable.informatica_cover};
-        List<Bag> listAux = new ArrayList<>();
+    public List<CardCategoria> getSetCarList(int qtd){
+        String[] models = new String[]{"Gallardo", "Vyron", "Corvette", "Pagani Zonda", "Porsche 911 Carrera", "BMW 720i", "DB77", "Mustang", "Camaro", "CT6"};
+        String[] brands = new String[]{"Lamborghini", " bugatti", "Chevrolet", "Pagani", "Porsche", "BMW", "Aston Martin", "Ford", "Chevrolet", "Cadillac"};
+        int[] photos = new int[]{R.drawable.bag_icon, R.drawable.bell_icon, R.drawable.busca_icon1x, R.drawable.person_icon, R.drawable.bag_icon, R.drawable.busca_icon1x, R.drawable.person_icon, R.drawable.daenerys_03x, R.drawable.daenerys_03x, R.drawable.person_icon};
+        List<CardCategoria> listAux = new ArrayList<>();
 
         for(int i = 0; i < qtd; i++){
-            Bag c = new Bag( nomeBag[i % nomeBag.length], backGround[i % backGround.length] );
+            CardCategoria c = new CardCategoria( models[i % models.length], brands[ i % brands.length ], photos[i % models.length] );
             listAux.add(c);
         }
         return(listAux);
