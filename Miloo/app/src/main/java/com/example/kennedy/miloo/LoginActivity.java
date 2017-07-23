@@ -29,6 +29,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.kennedy.miloo.fragments.AgendaFragment;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -96,14 +98,25 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
+//        Button mCadastraView = (Button) findViewById(R.id.cadastre_se);
+//        mCadastraView.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(LoginActivity.this, NovaContaActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
+
         Button mCadastraView = (Button) findViewById(R.id.cadastre_se);
         mCadastraView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, NovaContaActivity.class);
-                startActivity(intent);
+                AgendaFragment agendaFragment = new AgendaFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.contentLayout, agendaFragment, agendaFragment.getTag()).commit();
             }
         });
+
 
         //Usar para testes chama direto tela main
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
