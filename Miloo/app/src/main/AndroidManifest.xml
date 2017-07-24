@@ -14,12 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".LoginActivity"
-            android:label="@string/app_name">
-
-        </activity>
+            android:label="@string/app_name" />
         <activity android:name=".EsqueciActivity" />
         <activity android:name=".NovaContaActivity" />
         <activity android:name=".ConfiguracoesActivity" />
@@ -37,6 +34,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".FiltrosActivity" />
+        <activity android:name=".AvaliarActivity" />
+        <activity android:name=".CancelarServicoActivity"></activity>
     </application>
 
 </manifest>
