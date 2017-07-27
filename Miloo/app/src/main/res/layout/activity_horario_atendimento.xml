@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorWhite"
+    tools:context="com.example.kennedy.miloo.HorarioAtendimentoActivity">
+
+    <ScrollView
+        android:id="@+id/editar_contato_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/editar_contato_linear"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <RelativeLayout
+                android:id="@+id/linear1_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_segunda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Segunda"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/divider_segunda"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/textview_segunda"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_segunda"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/switch_segunda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/inicio_segunda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/switch_segunda"
+                        android:layout_toRightOf="@+id/switch_segunda"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Início" />
+
+                    <EditText
+                        android:id="@+id/fim_segunda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/inicio_segunda"
+                        android:layout_toRightOf="@+id/inicio_segunda"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Fim" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear2_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1_cancelar"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_terca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terça"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/divider_terca"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/textview_terca"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_terca"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/switch_terca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/inicio_terca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/switch_terca"
+                        android:layout_toRightOf="@+id/switch_terca"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Início" />
+
+                    <EditText
+                        android:id="@+id/fim_terca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/inicio_terca"
+                        android:layout_toRightOf="@+id/inicio_terca"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Fim" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear3_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear2_cancelar"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_quarta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quarta"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/divider_quarta"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/textview_quarta"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_quarta"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/switch_quarta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/inicio_quarta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/switch_quarta"
+                        android:layout_toRightOf="@+id/switch_quarta"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Início" />
+
+                    <EditText
+                        android:id="@+id/fim_quarta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/inicio_quarta"
+                        android:layout_toRightOf="@+id/inicio_quarta"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Fim" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear4_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear3_cancelar"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_quinta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quinta"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/divider_quinta"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/textview_quinta"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_quinta"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/switch_quinta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/inicio_quinta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/switch_quinta"
+                        android:layout_toRightOf="@+id/switch_quinta"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Início" />
+
+                    <EditText
+                        android:id="@+id/fim_quinta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/inicio_quinta"
+                        android:layout_toRightOf="@+id/inicio_quinta"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Fim" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear5_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear4_cancelar"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_sexta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sexta"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/divider_sexta"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/textview_sexta"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_sexta"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/switch_sexta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/inicio_sexta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/switch_sexta"
+                        android:layout_toRightOf="@+id/switch_sexta"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Início" />
+
+                    <EditText
+                        android:id="@+id/fim_sexta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/inicio_sexta"
+                        android:layout_toRightOf="@+id/inicio_sexta"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Fim" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear6_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear5_cancelar"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_sabado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sábado"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/divider_sabado"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/textview_sabado"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_sabado"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/switch_sabado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/inicio_sabado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/switch_sabado"
+                        android:layout_toRightOf="@+id/switch_sabado"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Início" />
+
+                    <EditText
+                        android:id="@+id/fim_sabado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/inicio_sabado"
+                        android:layout_toRightOf="@+id/inicio_sabado"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Fim" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/linear7_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear6_cancelar"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_domingo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domingo"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/divider_domingo"
+                    android:layout_width="150dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/textview_domingo"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_domingo"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/switch_domingo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/inicio_domingo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/switch_domingo"
+                        android:layout_toRightOf="@+id/switch_domingo"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Início" />
+
+                    <EditText
+                        android:id="@+id/fim_domingo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/inicio_domingo"
+                        android:layout_toRightOf="@+id/inicio_domingo"
+                        android:ems="7"
+                        android:inputType="time"
+                        android:text="Fim" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/salvar_horario_atendimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear7_cancelar"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimaryDark"
+                android:text="Salvar dados"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

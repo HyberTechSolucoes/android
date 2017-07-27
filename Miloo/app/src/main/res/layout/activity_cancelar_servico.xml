@@ -30,11 +30,18 @@
             android:text="Escolha um motivo"
             android:textSize="24sp" />
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:id="@+id/linear1_cancelar"
+        android:layout_below="@+id/textViewMotivo">
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@id/mensagem_cancelar"
-            android:layout_below="@+id/textViewMotivo">
+            android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/mensagem_cancelar_input"
@@ -49,6 +56,8 @@
 
         </android.support.design.widget.TextInputLayout>
 
+    </LinearLayout>
+
 
         <Button
             android:id="@+id/enviar_cancelar_servico"
@@ -58,7 +67,7 @@
             android:text="Cancelar Serviço"
             android:textColor="@color/colorWhite"
             android:textStyle="bold"
-            android:layout_below="@+id/mensagem_cancelar"
+            android:layout_below="@+id/linear1_cancelar"
             android:layout_centerHorizontal="true" />
 
     </RelativeLayout>

@@ -35,7 +35,8 @@
         </activity>
         <activity android:name=".FiltrosActivity" />
         <activity android:name=".AvaliarActivity" />
-        <activity android:name=".CancelarServicoActivity"></activity>
+        <activity android:name=".CancelarServicoActivity" />
+        <activity android:name=".HorarioAtendimentoActivity"></activity>
     </application>
 
 </manifest>
