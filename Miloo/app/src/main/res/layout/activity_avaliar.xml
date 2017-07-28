@@ -90,7 +90,7 @@
                 android:id="@+id/mensagem_avaliar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="textMultiLine" />
 
         </android.support.design.widget.TextInputLayout>
 
