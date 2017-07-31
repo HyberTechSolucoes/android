@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.kennedy.miloo.AgendaFiltroActivity">
+
+        <TextView
+            android:id="@+id/textView_filtrar_agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrar Agenda"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/list_view_filtrar_agenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/textView_servicos_agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meus Serviços"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/list_view_servicos_agenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+</LinearLayout>

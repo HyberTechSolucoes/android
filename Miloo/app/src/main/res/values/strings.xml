@@ -55,6 +55,45 @@
     </string-array>
 
 
+    <string-array name="lista_titulo">
+        <item>Titulo 01</item>
+        <item>Titulo 02</item>
+        <item>Titulo 03</item>
+        <item>Titulo 04</item>
+        <item>Titulo 05</item>
+        <item>Titulo 06</item>
+        <item>Titulo 07</item>
+        <item>Titulo 08</item>
+        <item>Titulo 09</item>
+        <item>Titulo 10</item>
+    </string-array>
+
+    <string-array name="lista_subtitulo">
+        <item>SubTitulo 01</item>
+        <item>SubTitulo 02</item>
+        <item>SubTitulo 03</item>
+        <item>SubTitulo 04</item>
+        <item>SubTitulo 05</item>
+        <item>SubTitulo 06</item>
+        <item>SubTitulo 07</item>
+        <item>SubTitulo 08</item>
+        <item>SubTitulo 09</item>
+        <item>SubTitulo 10</item>
+    </string-array>
+
+    <string-array name="lista_extra">
+        <item>Extra 01</item>
+        <item>Extra 02</item>
+        <item>Extra 03</item>
+        <item>Extra 04</item>
+        <item>Extra 05</item>
+        <item>Extra 06</item>
+        <item>Extra 07</item>
+        <item>Extra 08</item>
+        <item>Extra 09</item>
+        <item>Extra 10</item>
+    </string-array>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

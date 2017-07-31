@@ -9,17 +9,20 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.kennedy.miloo.R;
-import com.example.kennedy.miloo.domain.Agenda;
+import com.example.kennedy.miloo.domain.ListaEnderecos;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created by Felipe on 30/07/2017.
+ */
 
-public class AgendaAdapter extends ArrayAdapter {
+public class ListaEnderecosAdapter extends ArrayAdapter {
 
     List list = new ArrayList();
 
-    public AgendaAdapter(Context context, int resource) {
+    public ListaEnderecosAdapter(Context context, int resource) {
         super(context, resource);
     }
 
@@ -27,7 +30,7 @@ public class AgendaAdapter extends ArrayAdapter {
         ImageView imagem;
         TextView titulo;
         TextView subtitulo;
-        TextView data;
+        TextView cidade;
     }
 
     @Override
@@ -51,27 +54,27 @@ public class AgendaAdapter extends ArrayAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View row;
         row = convertView;
-        AgendaAdapter.DataHandler handler;
+        DataHandler handler;
 
         if (convertView == null){
             LayoutInflater inflater = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            row = inflater.inflate(R.layout.fragment_agenda_item, parent, false);
-            handler = new AgendaAdapter.DataHandler();
-            handler.titulo = (TextView) row.findViewById(R.id.textView_titulo_agenda);
-            handler.subtitulo = (TextView) row.findViewById(R.id.textView_subtitulo_agenda);
-            handler.data = (TextView) row.findViewById(R.id.textView_data_agenda);
-            handler.imagem = (ImageView) row.findViewById(R.id.imageViewFoto);
+            row = inflater.inflate(R.layout.fragment_lista_enderecos_item, parent, false);
+            handler = new DataHandler();
+            handler.titulo = (TextView) row.findViewById(R.id.textView_titulo_lista_endereco);
+            handler.subtitulo = (TextView) row.findViewById(R.id.textView_subtitulo_lista_endereco);
+            handler.cidade = (TextView) row.findViewById(R.id.textView_cidade_lista_endereco);
+            handler.imagem = (ImageView) row.findViewById(R.id.imageViewPin);
             row.setTag(handler);
         }
         else {
-            handler = (AgendaAdapter.DataHandler) row.getTag();
+            handler = (DataHandler) row.getTag();
         }
-        Agenda dataProvider;
-        dataProvider = (Agenda)this.getItem(position);
-        handler.imagem.setImageResource(dataProvider.getAgenda_img());
-        handler.titulo.setText(dataProvider.getAgenda_titulo());
-        handler.subtitulo.setText(dataProvider.getAgenda_subtitulo());
-        handler.data.setText(dataProvider.getAgenda_cidade());
+        ListaEnderecos dataProvider;
+        dataProvider = (ListaEnderecos)this.getItem(position);
+        handler.imagem.setImageResource(dataProvider.getLista_endereco_img());
+        handler.titulo.setText(dataProvider.getLista_endereco_titulo());
+        handler.subtitulo.setText(dataProvider.getLista_endereco_subtitulo());
+        handler.cidade.setText(dataProvider.getLista_endereco_cidade());
 
         return row;
     }
