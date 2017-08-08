@@ -40,7 +40,11 @@
         <activity android:name=".ConvidarAmigosActivity" />
         <activity android:name=".ListaEnderecosActivity" />
         <activity android:name=".AgendaActivity" />
-        <activity android:name=".AgendaFiltroActivity"></activity>
+        <activity android:name=".AgendaFiltroActivity" />
+        <activity
+            android:name=".PerfilActivity"
+            android:label="@string/title_activity_perfil"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
